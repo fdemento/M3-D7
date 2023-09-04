@@ -1,73 +1,126 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Netflix Clone</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-
-</head>
-<header>
-          <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <img src="assets/netflix_logo.svg" alt="Netflix" height="28" class="me-4">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
-                  </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">TV Shows</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Movies</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Recently Added</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">My List</a>
-              </li>
-            </ul>
-            <span>
-                <i class="ri-search-line ri-xl me-2"></i>
-                <span class="me-2">KIDS</span>
-                <i class="ri-notification-3-fill ri-xl me-2"></i>
-                <img src="assets/avatar.png" alt="Avatar Netflix" height="48px" class="me-2">
-                <i class="ri-arrow-down-s-fill ri-xl me-2"></i>
-            </span>
-          </div>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <img
+          src="assets/netflix_logo.svg"
+          alt="Netflix"
+          height="28"
+          class="me-4"
+        />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="#">TV Shows</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Movies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Recently Added</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">My List</a>
+            </li>
+          </ul>
+          <span>
+            <i class="ri-search-line ri-xl me-2"></i>
+            <span class="me-2">KIDS</span>
+            <i class="ri-notification-3-fill ri-xl me-2"></i>
+            <img
+              src="assets/avatar.png"
+              alt="Avatar Netflix"
+              height="48px"
+              class="me-2"
+            />
+            <i class="ri-arrow-down-s-fill ri-xl me-2"></i>
+          </span>
         </div>
-      </nav>
-</header>
+      </div>
+    </nav>
+  </header>
   <body>
-    <section class="row">
-        <div class="container-fluid d-flex align-items-center my-4">
-            <h1 class="me-4">TV Shows</h1>
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle rounded-0 bg-dark border border-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">Genres</button>
-                <ul class="dropdown-menu">
-                    <li><button class="dropdown-item" type="button">Azione</button></li>
-                    <li><button class="dropdown-item" type="button">Commedia</button></li>
-                    <li><button class="dropdown-item" type="button">Horror</button></li>
-                </ul>
-            </div>
+    <section class="row d-flex justify-content-between">
+        <!-- Sezione iniziale -->
+      <div class="d-flex flex-row my-4">
+        <h1 class="me-4 text-light">TV Shows</h1>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle rounded-0 bg-dark border border-white"
+            type="button" data-bs-toggle="dropdown" aria-expanded="false">Genres</button>
+          <ul class="dropdown-menu">
+            <li><button class="dropdown-item" type="button">Azione</button></li>
+            <li>
+              <button class="dropdown-item" type="button">Commedia</button>
+            </li>
+            <li><button class="dropdown-item" type="button">Horror</button></li>
+          </ul>
         </div>
+        <!-- Fine sezione iniziale -->
+        <div>
+            <i class="ri-align-left text-secondary mx-1"></i>
+            <i class="ri-layout-grid-fill text-secondary mx-1"></i>
+        </div>
+      </div>
+      <div>
+
+
+
+      </div>
     </section>
+
     <section>
-        <h2 class="me-4">Trending now</h1>
-        
+
+      <h3 class="me-4 text-light">Trending now</h3>
+      
     </section>
-    <section class="row">
-        <div class="col col-lg-2">
-            <img src="assets/" alt="">
-        </div>
+
+    <section class="d-flex flex-nowrap row shows">
+
+      <div class="flex-nowrap">
+        <img class="col col-lg-2 " src="assets/1.png" alt="" />
+        <img class="col col-lg-2" src="assets/2.png" alt="" />
+        <img class="col col-lg-2" src="assets/3.png" alt="" />
+        <img class="col col-lg-2" src="assets/4.png" alt="" />
+        <img class="col col-lg-2" src="assets/5.png" alt="" />
+        <img class="col col-lg-2" src="assets/6.png" alt="" />
+      </div>
+      
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

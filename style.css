@@ -3,10 +3,15 @@
     padding: 0;
 }
 
+body {
+    padding: 0 32px;  
+    background-color: #141414;
+}
+
 @font-face {
     font-family: 'netflix_sansbold';
-    src: url('netflix_sans_bold-webfont.woff2') format('woff2'),
-         url('netflix_sans_bold-webfont.woff') format('woff');
+    src: url('fonts/netflix_sans_bold-webfont.woff2') format('woff2'),
+         url('fonts/netflix_sans_bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -14,8 +19,8 @@
 
 @font-face {
     font-family: 'netflix_sanslight';
-    src: url('netflix_sans_light-webfont.woff2') format('woff2'),
-         url('netflix_sans_light-webfont.woff') format('woff');
+    src: url('fonts/netflix_sans_light-webfont.woff2') format('woff2'),
+         url('fonts/netflix_sans_light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -23,9 +28,17 @@
 
 @font-face {
     font-family: 'netflix_sansmedium';
-    src: url('netflix_sans_medium-webfont.woff2') format('woff2'),
-         url('netflix_sans_medium-webfont.woff') format('woff');
+    src: url('fonts/netflix_sans_medium-webfont.woff2') format('woff2'),
+         url('fonts/netflix_sans_medium-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
+}
+
+h1,h2,h3 {
+    font-family: 'netflix_sansmedium', sans-serif;
+}
+
+span {
+    font-family: 'netflix_sanslight', sans-serif;
 }
